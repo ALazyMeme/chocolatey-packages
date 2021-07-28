@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 <metadata>
 <id>chatterino</id>
-<version>2.3.4-pre-20210630</version>
+<version>2.3.4-alpha-20210728</version>
 <packageSourceUrl>https://github.com/chatterino/chatterino2</packageSourceUrl>
 <owners>ALazyMeme</owners>
 <title>Chatterino</title>
@@ -19,15 +19,18 @@
 <summary>Chatterino is a chat client for Twitch.tv</summary>
 <releaseNotes>
 ## Fortnightly
-- Major: Added username autocompletion popup menu when typing usernames with an @ prefix.
-- Minor: Channel name in `&lt;channel&gt; has gone offline. Exiting host mode.` messages is now clickable.
-- Minor: Added `/openurl` command. Usage: `/openurl &lt;URL&gt;`. Opens the provided URL in the browser.
-- Minor: The `/live` split now shows channels going offline.
-- Bugfix: Fixed large timeout durations in moderation buttons overlapping with usernames or other buttons.
-- Bugfix: Fixed subscription emotes showing up incorrectly in the emote menu.
-- Bugfix: Fix reconnecting when IRC write connection is lost.
-- Bugfix: Fixed bit and new subscriber emotes not (re)loading in some rare cases.
-- Bugfix: Moderation buttons now show the correct time unit when using units other than seconds.
+- Major: Newly uploaded Twitch emotes are once again present in emote picker and can be autocompleted with Tab as well.
+- Minor: Added autocompletion in `/whispers` for Twitch emotes, Global BTTV/FFZ emotes and emojis.
+- Minor: Received Twitch messages now use the exact same timestamp (obtained from Twitch's server) for every Chatterino user instead of assuming message timestamp on client's side.
+- Minor: Received IRC messages use `time` message tag for timestamp if it's available.
+- Minor: Added informative messages for recent-messages API's errors.
+- Minor: Added section with helpful Chatterino-related links to the About page.
+- Bugfix: Fixed PubSub not properly trying to resolve pending listens when the pending listens list was larger than 50.
+- Bugfix: Fixed comma appended to username completion when not at the beginning of the message.
+- Bugfix: Fixed "smiley" emotes being unable to be "Tabbed" with autocompletion, introduced in v2.3.3.
+- Bugfix: Copy buttons in usercard now show properly in light mode.
+- Bugfix: Fixed bug misplacing chat when zooming on Chrome with Chatterino Native Host extension.
+- Dev: Add logging for HTTP requests.
 </releaseNotes>
 <dependencies>
 <dependency id="vcredist140" version="14.20" />
