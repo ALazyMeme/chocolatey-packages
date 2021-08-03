@@ -10,7 +10,7 @@ $packageArgs = @{
   file			= $fileLocation
   validExitCodes= @(0)
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /MERGETASKS="!vcredist"'
-  checksum      = '1081456CC491C9B29CFE45DA00741698A464FD5B06537A2DF213026E015D7C19'
+  checksum      = '246CFCE7071A3D8525211D252CB50EB161B8FD7B250DAB431085B5CB8E329A30'
   checksumType  = 'sha256'
 }
 
