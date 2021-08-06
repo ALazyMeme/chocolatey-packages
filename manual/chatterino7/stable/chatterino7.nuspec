@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 <metadata>
 <id>chatterino7</id>
-<version>2.3.4-beta</version>
+<version>7.3.3</version>
 <packageSourceUrl>https://github.com/SevenTV/chatterino7</packageSourceUrl>
 <owners>ALazyMeme</owners>
 <title>Chatterino7</title>
