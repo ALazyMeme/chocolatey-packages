@@ -15,4 +15,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyInstallPackage @packageArgs
-Install-ChocolateyShortcut -ShortcutFilePath "$env:USERPROFILE\Desktop\Chatterino7.lnk" -TargetPath "C:\Program Files\Chatterino7\chatterino.exe"
+Install-ChocolateyShortcut -ShortcutFilePath "$env:USERPROFILE\Desktop\Chatterino7.lnk" -TargetPath "C:\Program Files (x86)\Chatterino7\chatterino.exe"
