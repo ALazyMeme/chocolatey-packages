@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+<metadata>
+<id>chatterino7</id>
+<version>2.3.4-beta</version>
+<packageSourceUrl>https://github.com/SevenTV/chatterino7</packageSourceUrl>
+<owners>ALazyMeme</owners>
+<title>Chatterino7</title>
+<authors>AnatoleAM</authors>
+<projectUrl>https://github.com/SevenTV/chatterino7</projectUrl>
+<iconUrl>https://fourtf.com/img/chatterino-icon-64.png</iconUrl>
+<licenseUrl>https://github.com/SevenTV/chatterino7/blob/chatterino7/LICENSE</licenseUrl>
+<requireLicenseAcceptance>false</requireLicenseAcceptance>
+<projectSourceUrl>https://github.com/SevenTV/chatterino7</projectSourceUrl>
+<bugTrackerUrl>https://github.com/SevenTV/chatterino7/issues</bugTrackerUrl>
+<tags>chatterino7 twitch chat irc chatterino chatclient 7tv</tags>
+<description>Chatterino7 is a fork of Chatterino. It adds 7tv functionality.</description>
+<summary>Chatterino is a chat client for Twitch.tv</summary>
+<releaseNotes>
+### 2.3.4-beta
+- Major: Newly uploaded Twitch emotes are once again present in emote picker and can be autocompleted with Tab as well.
+- Major: Deprecated `/(un)follow` commands and (un)following in the usercards as Twitch has removed this feature for 3rd party applications.
+- Major: Added the ability to add nicknames for users.
+- Major: Fixed constant disconnections with more than 20 channels by rate-limiting outgoing JOIN messages.
+- Minor: Added autocompletion in /whispers for Twitch emotes, Global Bttv/Ffz emotes and emojis.
+- Minor: Received Twitch messages now use the exact same timestamp (obtained from Twitch's server) for every Chatterino user instead of assuming message timestamp on client's side.
+- Minor: Received IRC messages use `time` message tag for timestamp if it's available.
+- Minor: Added informative messages for recent-messages API's errors.
+- Minor: Added section with helpful Chatterino-related links to the About page.
+- Minor: Now uses spaces instead of magic Unicode character for sending duplicate messages.
+- Minor: Added `channel.live` filter variable.
+- Bugfix: Fixed "smiley" emotes being unable to be "Tabbed" with autocompletion, introduced in v2.3.3.
+- Bugfix: Fixed PubSub not properly trying to resolve pending listens when the pending listens list was larger than 50.
+- Bugfix: Copy buttons in usercard now show properly in light mode.
+- Bugfix: Fixed comma appended to username completion when not at the beginning of the message.
+- Bugfix: Fixed bug misplacing chat when zooming on Chrome with Chatterino Native Host extension.
+- Bugfix: Channel point redemptions from ignored users are now properly blocked.
+</releaseNotes>
+<dependencies>
+<dependency id="vcredist140" version="14.20" />
+</dependencies>
+</metadata>
+<files>
+<file src="tools\**" target="tools" />
+</files>
+</package>
