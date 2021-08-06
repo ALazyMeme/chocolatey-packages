@@ -9,7 +9,7 @@ $packageArgs = @{
   softwareName  = 'Chatterino7*'
   file			= $fileLocation
   validExitCodes= @(0)
-  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /MERGETASKS="!vcredist"'
+  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /MERGETASKS="!vcredist" /DIR="C:\Program Files\Chatterino7"'
   checksum      = 'A0D1C47936BE460CC8E830BE8B29CE1BC54B700EE76976E35BE72A877F2F68D5'
   checksumType  = 'sha256'
 }
