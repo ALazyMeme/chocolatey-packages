@@ -1,18 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Join-Path $toolsDir 'chatterino7-installer.exe'
+$fileLocation = Join-Path $toolsDir 'chatterino7-stable.zip'
 $packagename  = 'Chatterino7'
 
-$packageArgs = @{
-  packageName   = $packagename
-  fileType      = 'EXE'
-  softwareName  = 'Chatterino7*'
-  file			= $fileLocation
-  validExitCodes= @(0)
-  silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /MERGETASKS="!vcredist" /DIR="C:\Program Files\Chatterino7"'
-  checksum      = 'A0D1C47936BE460CC8E830BE8B29CE1BC54B700EE76976E35BE72A877F2F68D5'
-  checksumType  = 'sha256'
-}
-
-Install-ChocolateyInstallPackage @packageArgs
+Get-ChocolateyUnzip -FileFullPath "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)\\chatterino7-stable.zip" -Destination "C:\Program Files\Chatterino7" -PackageName "Chatterino7"
 Install-ChocolateyShortcut -ShortcutFilePath "$env:USERPROFILE\Desktop\Chatterino7.lnk" -TargetPath "C:\Program Files\Chatterino7\chatterino.exe"
