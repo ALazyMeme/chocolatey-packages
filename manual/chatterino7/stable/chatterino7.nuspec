@@ -11,7 +11,6 @@
 <iconUrl>https://fourtf.com/img/chatterino-icon-64.png</iconUrl>
 <licenseUrl>https://github.com/SevenTV/chatterino7/blob/chatterino7/LICENSE</licenseUrl>
 <requireLicenseAcceptance>false</requireLicenseAcceptance>
-<projectSourceUrl>https://github.com/SevenTV/chatterino7</projectSourceUrl>
 <bugTrackerUrl>https://github.com/SevenTV/chatterino7/issues</bugTrackerUrl>
 <tags>chatterino7 twitch chat irc chatterino chatclient 7tv</tags>
 <description>Chatterino7 is a fork of Chatterino. It adds 7tv functionality.</description>
