@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 <metadata>
 <id>dankerino</id>
-<version>2.3.4.20210809</version>
+<version>2.3.4.20210825</version>
 <projectUrl>https://github.com/Mm2PL/dankerino</projectUrl>
 <owners>ALazyMeme</owners>
 <title>Dankerino</title>
