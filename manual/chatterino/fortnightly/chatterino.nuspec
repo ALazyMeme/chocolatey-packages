@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 <metadata>
 <id>chatterino</id>
-<version>2.3.4-alpha-20210728</version>
+<version>2.3.5-alpha-20210825</version>
 <packageSourceUrl>https://github.com/chatterino/chatterino2</packageSourceUrl>
 <owners>ALazyMeme</owners>
 <title>Chatterino</title>
@@ -19,18 +19,24 @@
 <summary>Chatterino is a chat client for Twitch.tv</summary>
 <releaseNotes>
 ## Fortnightly
-- Major: Newly uploaded Twitch emotes are once again present in emote picker and can be autocompleted with Tab as well.
-- Minor: Added autocompletion in `/whispers` for Twitch emotes, Global BTTV/FFZ emotes and emojis.
-- Minor: Received Twitch messages now use the exact same timestamp (obtained from Twitch's server) for every Chatterino user instead of assuming message timestamp on client's side.
-- Minor: Received IRC messages use `time` message tag for timestamp if it's available.
-- Minor: Added informative messages for recent-messages API's errors.
-- Minor: Added section with helpful Chatterino-related links to the About page.
-- Bugfix: Fixed PubSub not properly trying to resolve pending listens when the pending listens list was larger than 50.
-- Bugfix: Fixed comma appended to username completion when not at the beginning of the message.
-- Bugfix: Fixed "smiley" emotes being unable to be "Tabbed" with autocompletion, introduced in v2.3.3.
-- Bugfix: Copy buttons in usercard now show properly in light mode.
-- Bugfix: Fixed bug misplacing chat when zooming on Chrome with Chatterino Native Host extension.
-- Dev: Add logging for HTTP requests.
+- Minor: Remove TwitchEmotes.com attribution and the open/copy options when right-clicking a Twitch Emote.
+- Minor: Strip leading @ and trailing , from username in /user and /usercard commands.
+- Minor: Display a system message when reloading subscription emotes to match BTTV/FFZ behavior.
+- Minor: Allow resub messages to show in `/mentions` tab.
+- Minor: Added a setting to hide similar messages by any user.
+- Minor: Duplicate spaces now count towards the display message length.
+- Minor: Commands are now backed up.
+- Minor: Added the ability to open an entire tab as a popup.
+- Minor: Added optional parameter to `/usercard` command for opening a usercard in a different channel context.
+- Minor: Added regex option to Nicknames.
+- Bugfix: Fixed colored usernames sometimes not working.
+- Bugfix: Restored ability to send duplicate `/me` messages.
+- Bugfix: Notifications for moderators about other moderators deleting messages can now be disabled.
+- Bugfix: Moderation mode and active filters are now preserved when opening a split as a popup.
+- Bugfix: Fixed a bug that caused all badge highlights to use the same color.
+- Bugfix: Allow starting Streamlink from Chatterino when running as a Flatpak.
+- Dev: Renamed CMake's build option `USE_SYSTEM_QT5KEYCHAIN` to `USE_SYSTEM_QTKEYCHAIN`.
+- Dev: Add benchmarks that can be compiled with the `BUILD_BENCHMARKS` CMake flag. Off by default.
 </releaseNotes>
 <dependencies>
 <dependency id="vcredist140" version="14.20" />
