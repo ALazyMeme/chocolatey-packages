@@ -2,16 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
 <metadata>
 <id>chatterino7</id>
-<version>2.3.4-beta</version>
-<packageSourceUrl>https://github.com/SevenTV/chatterino7</packageSourceUrl>
+<version>7.3.5-alpha-20211009</version>
+<packageSourceUrl>https://github.com/ALazyMeme/chocolatey-packages</packageSourceUrl>
 <owners>ALazyMeme</owners>
 <title>Chatterino7</title>
 <authors>AnatoleAM</authors>
 <projectUrl>https://github.com/SevenTV/chatterino7</projectUrl>
-<iconUrl>https://fourtf.com/img/chatterino-icon-64.png</iconUrl>
+<iconUrl>https://rawcdn.githack.com/ALazyMeme/chocolatey-packages/d70404b7cc75800b71d2f920a8a72fe55acfb046/manual/icons/chatterino.png</iconUrl>
 <licenseUrl>https://github.com/SevenTV/chatterino7/blob/chatterino7/LICENSE</licenseUrl>
 <requireLicenseAcceptance>false</requireLicenseAcceptance>
-<projectSourceUrl>https://github.com/SevenTV/chatterino7</projectSourceUrl>
 <bugTrackerUrl>https://github.com/SevenTV/chatterino7/issues</bugTrackerUrl>
 <tags>chatterino7 twitch chat irc chatterino chatclient 7tv</tags>
 <description>Chatterino7 is a fork of Chatterino. It adds 7tv functionality.</description>
