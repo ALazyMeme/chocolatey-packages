@@ -8,5 +8,6 @@ builds/
 .vscode/
 .vscode-server/
 
-# zip files
+# installer files
 *.zip
+*.exe
